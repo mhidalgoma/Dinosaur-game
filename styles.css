@@ -1,0 +1,60 @@
+.body {
+  height: 100vh;
+  background-color: #584040;
+  display: flex;
+  align-items: center;
+}
+.container {
+  width: 920px;
+  height: 280px;
+  margin: 0 auto;
+  position: relative;
+  background: -webkit-linear-gradient(#87d6c7, #ffe2d1);
+}
+.dino {
+  width: 84px;
+  height: 84px;
+  position: absolute;
+  bottom: 22px;
+  left: 42px;
+  z-index: 2;
+  background: url(./images/dino.png);
+  background-size: 336px 84px;
+  background-position-x: 0px;
+}
+.dino-running {
+  animation: moveDino 0.25s steps(2) infinite;
+}
+.dino-crash {
+  background-position-x: -252px;
+}
+.ground {
+  width: 200%;
+  height: 42px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(./images/suelo.png) repeat-x 0px 0px;
+  background-size: 50% 42px;
+}
+.score {
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  z-index: 10;
+  color: #d48872;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: right;
+}
+@keyframes moveDino {
+  from {
+    background-position-x: -84px;
+  }
+  to {
+    background-position-x: -252px;
+  }
+}
