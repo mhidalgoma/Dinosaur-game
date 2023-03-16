@@ -10,6 +10,7 @@
   margin: 0 auto;
   position: relative;
   background: -webkit-linear-gradient(#87d6c7, #ffe2d1);
+  overflow: hidden;
 }
 .dino {
   width: 84px;
