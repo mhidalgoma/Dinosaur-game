@@ -46,32 +46,67 @@ ul {
   min-height: 50px;
   color: #d48872;
   font-size: 50px;
-  margin: 40px 0px;
+  margin: 0px 0px 40px 0px;
   font-weight: bold;
 }
 .info {
   color: #584040;
   font-size: 20px;
   width: 50%;
-  max-width: 600px;
+  max-width: 700px;
   text-align: center;
   line-height: 1.5;
   padding: 20px;
   border-radius: 5px;
   background-color: #d48872;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .bold {
   font-weight: bold;
+}
+.levels {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  max-width: 500px;
+  line-height: 1.5;
+  font-size: 22px;
+  color: #d48872;
+  margin-bottom: 20px;
+}
+.easy {
+  background-color: #d48872;
+  width: 120px;
+  text-align: center;
+  border-radius: 5px;
+  color: #584040;
+  font-weight: bold;
+  cursor: pointer;
+}
+.medium {
+  width: 120px;
+  text-align: center;
+  border-radius: 5px;
+  color: #d48872;
+  font-weight: bold;
+  cursor: pointer;
+}
+.difficult {
+  width: 120px;
+  text-align: center;
+  border-radius: 5px;
+  color: #d48872;
+  font-weight: bold;
+  cursor: pointer;
 }
 .container {
   width: 70%;
   max-width: 920px;
   height: 280px;
-
   position: relative;
   background: -webkit-linear-gradient(#87d6c7, #ffe2d1);
   overflow: hidden;
+  margin-bottom: 30px;
 }
 .dino {
   width: 84px;
@@ -103,12 +138,12 @@ ul {
   width: 100px;
   height: 30px;
   position: absolute;
-  top: 5px;
-  right: 15px;
+  top: 10px;
+  right: 20px;
   z-index: 10;
   color: #d48872;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   text-align: right;
 }

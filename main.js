@@ -55,6 +55,9 @@ var textScore;
 var ground;
 var gameOver;
 var btn;
+var easy;
+var medium;
+var difficult;
 
 function Start() {
   gameOver = document.querySelector('.game-over');
@@ -63,7 +66,41 @@ function Start() {
   container = document.querySelector('.container');
   textScore = document.querySelector('.score');
   dino = document.querySelector('.dino');
+  easy = document.querySelector('.js-easy');
+  medium = document.querySelector('.js-medium');
+  difficult = document.querySelector('.js-difficult');
   document.addEventListener('keydown', HandleKeyDown);
+  easy.addEventListener('click', HandleEasy);
+  medium.addEventListener('click', HandleMedium);
+  difficult.addEventListener('click', HandleDifficult);
+}
+
+function HandleEasy() {
+  gameSpeed = 1;
+  easy.style.background = '#d48872';
+  easy.style.color = '#584040';
+  medium.style.background = '#584040';
+  medium.style.color = '#d48872';
+  difficult.style.background = '#584040';
+  difficult.style.color = '#d48872';
+}
+function HandleMedium() {
+  gameSpeed = 2;
+  medium.style.background = '#d48872';
+  medium.style.color = '#584040';
+  difficult.style.background = '#584040';
+  difficult.style.color = '#d48872';
+  easy.style.background = '#584040';
+  easy.style.color = '#d48872';
+}
+function HandleDifficult() {
+  gameSpeed = 3;
+  difficult.style.background = '#d48872';
+  difficult.style.color = '#584040';
+  medium.style.background = '#584040';
+  medium.style.color = '#d48872';
+  easy.style.background = '#584040';
+  easy.style.color = '#d48872';
 }
 
 function HandleKeyDown(ev) {
@@ -204,7 +241,6 @@ function HandleBtn() {
 
   groundX = 0;
   speedScene = 1280 / 3;
-  gameSpeed = 1;
   score = 0;
   textScore.innerText = score;
 
@@ -224,6 +260,7 @@ function HandleBtn() {
   btn.style.display = 'none ';
   dino.classList.remove('dino-crash');
   dino.classList.add('dino-running');
+
   Init();
 }
 
