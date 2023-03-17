@@ -5,16 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dino Game</title>
+    <title>T-Rex Game</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body class="body">
-    <div class="container">
-        <div class="ground"></div>
-        <div class="dino dino-running"></div>
-        <div class="score">0</div>
-    </div>
+    <main class="main">
+        <h1 class="h1">T-Rex Game</h1>
+        <p class="info">Press the <span class="bold">space bar</span> to start the game. Use the <span
+                class="bold">space bar</span> to make the dinosaur jump. Try to score
+            the maximum points. Good Luck!
+        </p>
+        <div class="container">
+            <div class="ground"></div>
+            <div class="dino dino-running"></div>
+            <div class="score">0</div>
+            <div class="over">
+                <div class="game-over">GAME OVER</div>
+                <button class="btn-play js-btn">Play again</button>
+            </div>
+        </div>
+
+    </main>
     <script src="./main.js"></script>
 </body>
 

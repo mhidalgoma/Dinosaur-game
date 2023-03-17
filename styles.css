@@ -1,8 +1,64 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
 .body {
   height: 100vh;
   background-color: #584040;
   display: flex;
   align-items: center;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h1 {
+  color: #d48872;
+  font-size: 50px;
+  margin: 40px 0px;
+  font-weight: bold;
+}
+.info {
+  color: #584040;
+  font-size: 20px;
+  width: 50%;
+  text-align: center;
+  line-height: 1.5;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #d48872;
+  margin-bottom: 50px;
+}
+.bold {
+  font-weight: bold;
 }
 .container {
   width: 920px;
@@ -51,6 +107,49 @@
   font-weight: bold;
   text-align: right;
 }
+.cactus {
+  width: 46px;
+  height: 96px;
+  position: absolute;
+  bottom: 16px;
+  left: 600px;
+  z-index: 1;
+  background: url(./images/cactus1.png) no-repeat;
+}
+.over {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game-over {
+  display: none;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #7e928b;
+  font-size: 30px;
+  font-family: Verdana;
+  font-weight: 700;
+  padding-top: 100px;
+}
+.btn-play {
+  display: none;
+  width: 120px;
+  text-align: center;
+  color: #ffe2d1;
+  font-size: 16px;
+  font-family: Verdana;
+  font-weight: 700;
+  background-color: #d48872;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 150px;
+  z-index: 2;
+}
+
 @keyframes moveDino {
   from {
     background-position-x: -84px;
